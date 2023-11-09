@@ -3,7 +3,8 @@ FROM python:3.12-alpine AS builder
 # set the working directory
 WORKDIR /code
 # Copy the requirements file
-COPY ./requirements.txt ./
+COPY ./requirements.txt ./requirements.txt
+COPY ./pyproject.toml ./pyproject.toml
 # Install the dependencies
 RUN pip install --user --no-cache-dir --upgrade -r /code/requirements.txt
 # 
