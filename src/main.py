@@ -14,7 +14,7 @@ async def root():
     parser.read("pyproject.toml")
     __version__ = parser['tool.poetry']['version'].replace('"', '')
     env = os.environ.get("ENV")
-    data = {"Hello": "World", "env": env, "version": __version__}
+    data = {"Hello": "World 2", "env": env, "version": __version__}
 
     json_data = json.dumps(data)
 
