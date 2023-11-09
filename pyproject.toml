@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kargo-demo-app"
-version = "0.0.1"
+version = "0.0.5"
 description = "version bumping for kargo demo"
 authors = ["Tautcius <t.bujauskas@gmail.com>"]
 readme = "README.md"
