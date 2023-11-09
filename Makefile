@@ -15,9 +15,11 @@ build:
 	@echo "Getting version"
 	@echo "Building..."
 	docker build -t ghcr.io/tautcius/kargo-demo-app:$(VERSION) -t ghcr.io/tautcius/kargo-demo-app:latest .
+	@echo "Built complete!"
 
 .PHONY: push
 push:
 	@echo "Pushing..."
 	docker push ghcr.io/tautcius/kargo-demo-app:$(VERSION)
 	docker push ghcr.io/tautcius/kargo-demo-app:latest
+	@echo "Pushed complete!"
