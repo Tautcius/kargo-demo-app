@@ -1,6 +1,12 @@
 VERSION := $(shell poetry version | awk '{print $$2}')
 all: build push
 
+.PHONY: minor
+minor:
+	@echo "Bumping minor version..."
+	poetry version minor
+
+
 .PHONY: patch
 patch:
 	@echo "Bumping patch version..."
